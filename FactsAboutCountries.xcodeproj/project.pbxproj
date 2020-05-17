@@ -15,6 +15,7 @@
 		088D6EC2246FDD4C0017CB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088D6EC0246FDD4C0017CB5A /* LaunchScreen.storyboard */; };
 		088D6ECA2471832E0017CB5A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D6EC92471832E0017CB5A /* CustomTableViewCell.swift */; };
 		088D6ECC247185D70017CB5A /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D6ECB247185D70017CB5A /* Countries.swift */; };
+		088D6ED02471936D0017CB5A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D6ECF2471936D0017CB5A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		088D6EC3246FDD4C0017CB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		088D6EC92471832E0017CB5A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		088D6ECB247185D70017CB5A /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		088D6ECF2471936D0017CB5A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				088D6EB9246FDD4A0017CB5A /* ViewController.swift */,
+				088D6ECF2471936D0017CB5A /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				088D6EBA246FDD4A0017CB5A /* ViewController.swift in Sources */,
 				088D6EB6246FDD4A0017CB5A /* AppDelegate.swift in Sources */,
 				088D6ECA2471832E0017CB5A /* CustomTableViewCell.swift in Sources */,
+				088D6ED02471936D0017CB5A /* DetailViewController.swift in Sources */,
 				088D6ECC247185D70017CB5A /* Countries.swift in Sources */,
 				088D6EB8246FDD4A0017CB5A /* SceneDelegate.swift in Sources */,
 			);

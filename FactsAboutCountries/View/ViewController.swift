@@ -81,5 +81,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewController()
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
