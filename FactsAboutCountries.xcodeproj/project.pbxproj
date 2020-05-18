@@ -16,6 +16,7 @@
 		088D6ECA2471832E0017CB5A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D6EC92471832E0017CB5A /* CustomTableViewCell.swift */; };
 		088D6ECC247185D70017CB5A /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D6ECB247185D70017CB5A /* Countries.swift */; };
 		088D6ED02471936D0017CB5A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088D6ECF2471936D0017CB5A /* DetailViewController.swift */; };
+		C8AF2E52247271EA001818F6 /* SelectedCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF2E51247271EA001818F6 /* SelectedCountry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		088D6EC92471832E0017CB5A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		088D6ECB247185D70017CB5A /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		088D6ECF2471936D0017CB5A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C8AF2E51247271EA001818F6 /* SelectedCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,6 @@
 				088D6EB7246FDD4A0017CB5A /* SceneDelegate.swift */,
 				088D6ECE24718D720017CB5A /* View */,
 				088D6ECD247188970017CB5A /* Model */,
-				088D6EC92471832E0017CB5A /* CustomTableViewCell.swift */,
 				088D6EBB246FDD4A0017CB5A /* Main.storyboard */,
 				088D6EBE246FDD4C0017CB5A /* Assets.xcassets */,
 				088D6EC0246FDD4C0017CB5A /* LaunchScreen.storyboard */,
@@ -79,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				088D6ECB247185D70017CB5A /* Countries.swift */,
+				C8AF2E51247271EA001818F6 /* SelectedCountry.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				088D6EB9246FDD4A0017CB5A /* ViewController.swift */,
+				088D6EC92471832E0017CB5A /* CustomTableViewCell.swift */,
 				088D6ECF2471936D0017CB5A /* DetailViewController.swift */,
 			);
 			path = View;
@@ -165,6 +168,7 @@
 			files = (
 				088D6EBA246FDD4A0017CB5A /* ViewController.swift in Sources */,
 				088D6EB6246FDD4A0017CB5A /* AppDelegate.swift in Sources */,
+				C8AF2E52247271EA001818F6 /* SelectedCountry.swift in Sources */,
 				088D6ECA2471832E0017CB5A /* CustomTableViewCell.swift in Sources */,
 				088D6ED02471936D0017CB5A /* DetailViewController.swift in Sources */,
 				088D6ECC247185D70017CB5A /* Countries.swift in Sources */,
@@ -244,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -298,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
