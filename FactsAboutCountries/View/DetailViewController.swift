@@ -9,9 +9,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+  var country = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = country
         view.backgroundColor = .white
     }
 }
