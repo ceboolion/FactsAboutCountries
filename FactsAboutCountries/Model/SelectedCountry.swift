@@ -15,7 +15,7 @@ struct SelectedCountry: Codable {
   let subregion: String
   let population: Int
   let area: Int
-  let timezone: [String]
+  let timezones: [String]
   let currencies: [Currency]
   let languages: [Language]
   let flag: String

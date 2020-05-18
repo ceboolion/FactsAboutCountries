@@ -68,7 +68,6 @@
 				088D6EB7246FDD4A0017CB5A /* SceneDelegate.swift */,
 				088D6ECE24718D720017CB5A /* View */,
 				088D6ECD247188970017CB5A /* Model */,
-				088D6EC92471832E0017CB5A /* CustomTableViewCell.swift */,
 				088D6EBB246FDD4A0017CB5A /* Main.storyboard */,
 				088D6EBE246FDD4C0017CB5A /* Assets.xcassets */,
 				088D6EC0246FDD4C0017CB5A /* LaunchScreen.storyboard */,
@@ -90,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				088D6EB9246FDD4A0017CB5A /* ViewController.swift */,
+				088D6EC92471832E0017CB5A /* CustomTableViewCell.swift */,
 				088D6ECF2471936D0017CB5A /* DetailViewController.swift */,
 			);
 			path = View;
