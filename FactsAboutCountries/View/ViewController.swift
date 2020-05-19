@@ -48,18 +48,20 @@ class ViewController: UIViewController {
         let decoder = JSONDecoder()
         do {
           let decodedData = try decoder.decode([Countries].self, from: data!)
-          self.allCountriesModel = decodedData
+            self.allCountriesModel = decodedData
+            print(decodedData)
           DispatchQueue.main.async {
             self.tableView.reloadData()
           }
         } catch {
           print(error)
-          self.performRequestError()
+//          self.performRequestError()
         }
       }
     }
     dataTask.resume()
   }
+    
   func performRequestError(){
     let ac = UIAlertController(title: "ERROR", message: "Cannot load data", preferredStyle: .alert)
     ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -83,7 +85,19 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
   }
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let detailVC = DetailViewController()
-    detailVC.country = allCountriesModel[indexPath.row].name
+    let data = allCountriesModel[indexPath.row]
+    detailVC.country = data.name
+    detailVC.flagImageURL = data.flag
+    detailVC.capital = data.capital
+    detailVC.region = data.region
+    detailVC.subregion = data.subregion
+    detailVC.population = String(data.population)
+    detailVC.area = String(data.area ?? 0)
+    detailVC.timeZone = data.timezones[0]
+    guard let safeCurrency = data.currencies else {return}
+    detailVC.currency = safeCurrency[0].name!
+    guard let safeLanguage = data.languages else {return}
+    detailVC.language = safeLanguage[0].name!
     navigationController?.pushViewController(detailVC, animated: true)
   }
 }
