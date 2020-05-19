@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SVGKit
 
 class DetailViewController: UIViewController {
+    
+    
     
     var country = ""
     var flagImageURL = ""
@@ -115,6 +118,14 @@ class DetailViewController: UIViewController {
         view.backgroundColor = .white
         configureView()
         updateLabels()
+        loadCountryImage()
+    }
+    
+    private func loadCountryImage(){
+        let imageURL = URL(string: flagImageURL)!
+        let imageData = try? Data(contentsOf: imageURL)
+        let anSVGImage: SVGKImage = SVGKImage(data: imageData)
+        flagImage.image = anSVGImage.uiImage
     }
     
     private func updateLabels(){
